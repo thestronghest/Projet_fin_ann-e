@@ -1,0 +1,93 @@
+/* Par convention */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(10, 10, 10);
+}
+
+/* Le header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:blue;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.logo_site img {
+    width: 100px;
+    height: 80px;
+}
+.nav_bar nav ul,
+.nav_bar nav li {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar nav a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-left: 50px;
+    color: white;
+}
+.nav_bar nav a:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.9s;
+}/* Footer */
+
+/* le body */
+.categorie_femme {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background: rgb(250, 253, 254);
+    padding:auto;
+    
+}
+
+.categorie_femme img{
+    width: 110px;
+
+}   
+.categorie_femme, p {
+    margin: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+}
+
+.categorie_femme{
+    margin: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+
+}
+.femme_1{display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+footer {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position:absolute;
+    top: 8000px;
+    width:100%; 
+    height: 150px;
+
+}
