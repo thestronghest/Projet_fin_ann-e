@@ -1,0 +1,86 @@
+/* Par convention */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+/* Le header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    z-index: 999; /* Place l'élément au-dessus des autres */
+    position: sticky; /* Rend l'élément fixe en haut de la page lors du défilement */
+    top: 0; /* Positionne l'élément en haut */
+    left: 0; /* Positionne l'élément à gauche */
+}
+.logo_site img {
+    width: 100px;
+    height: 80px;
+}
+.nav_bar nav ul,
+.nav_bar nav li {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar nav a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 25px;
+    color: white;
+}
+.nav_bar nav a:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.header {
+    background-color: rgb(32, 32, 150);
+    margin-bottom: 20px;
+    padding: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 0px 0px 5px 5px;
+}
+.header ul {
+    display: flex;
+    margin-left: 150px;
+}
+.header li {
+    margin-left: 80px;
+    display: flex;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.header a:hover {
+    color: white;
+    transition: 1s;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+

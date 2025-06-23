@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vetement_homme.css">
+    <link rel="stylesheet" href="vetement_homme.css"> 
     <title>vetement_homme</title>
 </head>
 <body>
@@ -11,127 +11,424 @@
         <div class="logo_site">
             <img src="../image_principal/logo_site.jpg" alt="logo_site" id="logo_site">
         </div>
-        
         <div class="nav_bar">
             <nav>
                 <ul>
                     <li> 
                         <a href="../index.html">
-                        Page Principal
+                        Accueil 🏠
                         </a>
                     </li>
                     <li> 
                         <a href="../categorie_homme/vetement_homme.html">
-                            Homme
+                            Homme 👨🏾
                         </a>
                     </li>
                     <li> 
-                        <a href="../categorie_femme/Vetement_femme.html">
-                            Femme
+                        <a href="../categorie_femme/vetement_femme.html">
+                            Femme 👩🏾
                         </a>
+                    </li>
+                    <li>
+                        <a href="../categorie_enfant/vetement_enfant.html">
+                            Enfant 👱🏾‍♂️👧🏾
+                        </a>
+                    </li>
+
+                    <li id="panier">
+                        <a href="panier.html">Votre panier 🛒</a> 
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section>
-        <div class="categorie_homme">
-            <div class="categorie_homme_1">
-                <img src="./image_homme/image_chemise_homme/image_homme (1).jpg">
-                <p>chemise grise</p>
-                <p>20$</p>
-                <button>acheter</button>
-            </div>
-            <div class="categorie_homme_1">
-                <img src="./image_homme/image_chemise_homme/image_homme (2).jpg">
-                <p>chemise </p>
-                <p>20$</p>
-                <button>acheter</button> 
-            </div>
-            <div class="categorie_homme_1">
-                <img src="./image_homme/image_chemise_homme/image_homme (3).jpg">
-                <p>chemise </p>
-                <p>20$</p>
-                <button>acheter</button>
-            </div>
-           
-        </section>
-
-        <section class="homme">
-            <div class="categorie_homme_1">
-                <img src="./image_homme/image_chemise_homme/image_homme (5).jpg">
-                <p>chemise </p>
-                <p>20$</p>
-                <button>acheter</button>
-            </div>
-            <div class="categorie_homme_1">
-                <img src="./image_homme/image_chemise_homme/image_homme (6).jpg">
-                <p>chemise </p>
-                <p>20$</p>
-                <button>acheter</button>
-            </div>
-            <div class="categorie_homme_1">
-                <img src="./image_homme/image_chemise_homme/image_homme (7).jpg">
-                <p>chemise </p>
-                <p>20$</p>
-                <button>acheter</button>
-            </div>                           
+    <section class="header2">
+        <div class="header">
+            <ul>
+                <li><a href="#chemises">Chemises</a></li>
+                <li><a href="#Vestes">Vestes</a></li>
+                <li><a href="#nouvel_arrivage">Nouvel arrivage</a></li>
+            </ul>
+        </div>
     </section>
 
-    <section class="homme_2">
-        <div class="categorie_homme_1">
-            <img src="./image_homme/image_chemise_homme/image_homme (8).jpg" alt="">
-            <p>chemise</p>
-            <p>20$</p>
-            <button>acheter</button>
-        </div>
-        <div class="categorie_homme_1">
-            <img src="./image_homme/image_chemise_homme/image_homme (9).jpg" alt="">
-            <p>chemise</p>
-            <p>20$</p>
-            <button>acheter</button>
-        </div>
-        <div class="categorie_homme_1">
-            <img src="./image_homme/image_chemise_homme/image_homme (10).jpg" alt="">
-            <p>chemise</p>
-            <p>20$</p>
-            <button>acheter</button>
-        </div>
- </section>
 
- <section class="homme_3">
-    <div class="categorie_homme_1">
-        <img src="./image_homme/image_chemise_homme/image_homme (11).jpg" alt="">
-        <p>chemise</p>
-        <p>20$</p>
-        <button>acheter</button>
+    <section class="body">
+        <h1 id="chemises">CHEMISES</h1>
+
+        <div class="body_image_homme_ligne_1">
+                <div class="body_image_homme_ligne_1_colonne_1">
+                    <img src="image_homme/image_chemise_homme/image_homme (1).jpg" alt="#">
+                    <p>
+                        Chemise blanche(avec ligne)
+                    </p>
+                    <h4>
+                        8$
+                    </h4>
+                    <button data-image="" data-name="Chemise blanche(avec ligne)" data-price="8" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_1_colonne_2">
+                    <img src="image_homme/image_chemise_homme/image_homme (2).jpg" alt="#">
+                    <p>
+                        Chemise blue (avec points)
+                    </p>
+                    <h4>
+                        10$
+                    </h4>
+                    <button data-image="" data-name="Chemise blue (avec points)" data-price="10" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_1_colonne_3">
+                    <img src="image_homme/image_chemise_homme/image_homme (3).jpg" alt="#">
+                    <p>
+                        Chemise gris (avec points)
+                    </p>
+                    <h4>
+                        8$
+                    </h4>
+                    <button data-image="" data-name="Chemise gris (avec points)" data-price="8" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+
+
+        <div class="body_image_homme_ligne_2">
+                <div class="body_image_homme_ligne_2_colonne_1">
+                    <img src="image_homme/image_chemise_homme/image_homme (4).jpg" alt="#">
+                    <p>
+                        Chemise blanche(avec ligne marron)
+                    </p>
+                    <h4>
+                        10$
+                    </h4>
+                    <button data-image="" data-name="Chemise blanche(avec ligne marron)" data-price="10" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_2_colonne_2">
+                    <img src="image_homme/image_chemise_homme/image_homme (5).jpg" alt="#">
+                    <p>
+                        Chemise blue (avec points)
+                    </p>
+                    <h4>
+                        10$
+                    </h4>
+                    <button data-image="" data-name="Chemise blue (avec points)" data-price="10" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_2_colonne_3">
+                    <img src="image_homme/image_chemise_homme/image_homme (6).jpg" alt="#">
+                    <p>
+                        Chemise gris
+                    </p>
+                    <h4>
+                        8$
+                    </h4>
+                    <button data-image="" data-name="Chemise gris" data-price="8" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+
+
+        <div class="body_image_homme_ligne_3">
+                <div class="body_image_homme_ligne_3_colonne_1">
+                    <img src="image_homme/image_chemise_homme/image_homme (16).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="image_homme/image_chemise_homme/image_homme (16).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_3_colonne_2">
+                    <img src="image_homme/image_chemise_homme/image_homme (8).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="image_homme/image_chemise_homme/image_homme (8).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_3_colonne_3">
+                    <img src="image_homme/image_chemise_homme/image_homme (9).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="image_homme/image_chemise_homme/image_homme (9).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+
+
+        <div class="body_image_homme_ligne_4">
+                <div class="body_image_homme_ligne_4_colonne_1">
+                    <img src="image_homme/image_chemise_homme/image_homme (10).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="image_homme/image_chemise_homme/image_homme (10).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_4_colonne_2">
+                    <img src="image_homme/image_chemise_homme/image_homme (11).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="image_homme/image_chemise_homme/image_homme (11).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_homme_ligne_4_colonne_3">
+                    <img src="image_homme/image_chemise_homme/image_homme (17).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="image_homme/image_chemise_homme/image_homme (17).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="body_image_homme_ligne_5">
+            <div class="body_image_homme_ligne_5_colonne_1">
+                <img src="image_homme/image_chemise_homme/image_homme (19).jpg" alt="#">
+                <p>
+                    Nom de l'article
+                </p>
+                <h4>
+                    $$$
+                </h4>
+                <button data-image="image_homme/image_chemise_homme/image_homme (19).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+            </div>
+
+            <div class="body_image_homme_ligne_5_colonne_2">
+                <img src="image_homme/image_chemise_homme/image_homme (20).jpg" alt="#">
+                <p>
+                    Nom de l'article
+                </p>
+                <h4>
+                    $$$
+                </h4>
+                <button data-image="image_homme/image_chemise_homme/image_homme (20).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+            </div>
+
+            <div class="body_image_homme_ligne_5_colonne_3">
+                <img src="image_homme/image_chemise_homme/image_homme (24).jpg" alt="#">
+                <p>
+                    Nom de l'article
+                </p>
+                <h4>
+                    $$$
+                </h4>
+                <button data-image="image_homme/image_chemise_homme/image_homme (24).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+            </div>
+        </div>
     </div>
-    <div class="categorie_homme_1">
-        <img src="./image_homme/image_chemise_homme/image_homme (12).jpg" alt="">
-        <p>chemise</p>
-        <p>20$</p>
-        <button>acheter</button>
-    </div>
-    <div class="categorie_homme_1">
-        <img src="./image_homme/image_chemise_homme/image_homme (13).jpg" alt="">
-        <p>chemise</p>
-        <p>20$</p>
-        <button>acheter</button>
-    </div>   
-</section>
-
-<section class="homme_4">
-    <div class="categorie_homme">
-   <img src="./image_homme/image_veste/image_veste_homme (2).jpg"width="120px"height="200px">
-   <img src="./image_homme/image_veste/image_veste_homme (3).jpg"width="120px"height="200px">
-   <img src="./image_homme/image_veste/image_veste_homme (4).jpg"width="120px"height="200px">
- </div>
-
-</section>
 
 
-    
+        <h1 id="Vestes">VESTES</h1> 
+
+
+        <div class="body_image_veste">
+            <div class="body_image_veste_ligne_1">
+                <div class="body_image_veste_ligne_1_colone_1">
+                    <img src="./image_homme/image_veste/image_veste_homme (1).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_veste/image_veste_homme (1).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_veste_ligne_1_colone_2">
+                    <img src="./image_homme/image_veste/image_veste_homme (2).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_veste/image_veste_homme (2).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_veste_ligne_1_colone_3">
+                    <img src="./image_homme/image_veste/image_veste_homme (3).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_veste/image_veste_homme (3).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+
+
+            <div class="body_image_veste_ligne_2">
+                <div class="body_image_veste_ligne_2_colone_1">
+                    <img src="./image_homme/image_veste/image_veste_homme (4).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_veste/image_veste_homme (4).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_veste_ligne_2_colone_2">
+                    <img src="./image_homme/image_veste/image_veste_homme (5).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_veste/image_veste_homme (5).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_veste_ligne_2_colone_3">
+                    <img src="./image_homme/image_veste/image_veste_homme (10).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_veste/image_veste_homme (10).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 id="nouvel_arrivage">NOUVEL ARRIVAGE</h1>
+
+        <div class="body_image_nouvel_arrivage">
+            <div class="body_image_nouvel_arrivage_ligne_1">
+                <div class="body_image_nouvel_arrivage_ligne_1_colone_1">
+                    <img src="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (1).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (1).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_nouvel_arrivage_ligne_1_colone_2">
+                    <img src="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (2).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (2).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_nouvel_arrivage_ligne_1_colone_3">
+                    <img src="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (3).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (3).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+
+
+            <div class="body_image_nouvel_arrivage_ligne_2">
+                <div class="body_image_nouvel_arrivage_ligne_2_colone_1">
+                    <img src="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (4).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (4).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_nouvel_arrivage_ligne_2_colone_2">
+                    <img src="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (5).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (5).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+
+                <div class="body_image_nouvel_arrivage_ligne_2_colone_3">
+                    <img src="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (6).jpg" alt="#">
+                    <p>
+                        Nom de l'article
+                    </p>
+                    <h4>
+                        $$$
+                    </h4>
+                    <button data-image="./image_homme/image_nouvel_arrivage/image_nouvel_arrivage (6).jpg" data-name="Nom de l'article" data-price="$$$" id="ajout_panier">Acheter</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="panier">
+        <form action="">
+            <div class="panier_header">
+                <h6>
+                    
+                </h6>
+                <h1>
+                    Formulaire d'ajout au panier
+                </h1>
+                <p>
+                    ❌
+                </p>
+            </div>
+            <div class="panier_corps">
+                <label for="taille">votre taille : </label>
+                <select name="taille" id="taille">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="2XL">2XL</option>
+                    <option value="3XL">3XL</option>
+                </select>
+                <label for="couleurs_dispo">Couleurs disponible</label>
+                <select name="couleurs_dispo" id="couleurs_dispo">
+                    <option value="blue"><div class="bleu">Bleu</div></option>
+                    <option value="rouge"><div class="rouge">Rouge</div></option>
+                    <option value="jaune"><div class="jaune">Jaune</div></option>
+                </select>
+            </div>
+            <button>AJOUTER AU PANIER 🧺</button>
+        </form>
+    </section>
+
+
     <footer>
         <div class="footer_1">
             <h1>
@@ -156,8 +453,9 @@
             <li>Facebook</li>
             <li>Whatsapp</li>
             <li>Instagram</li>
-            <li>Twiter(X)</li>
+            <li>Twiter(X)</li>'
         </div>
     </footer>
+    <script src="vetement_homme.js"></script>
 </body>
 </html>

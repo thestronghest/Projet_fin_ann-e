@@ -1,0 +1,25 @@
+#panier {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#panier ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#panier li {
+    margin-bottom: 10px;
+}
+
+#panier button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}

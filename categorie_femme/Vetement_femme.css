@@ -7,19 +7,22 @@
 body, html {
     padding: 0px;
     margin: 0px;
-    color: rgb(10, 10, 10);
+    scroll-behavior: smooth;
 }
 
 /* Le header */
-
 header {
     display: flex;
     justify-content: space-between;
-    background-color:blue;
+    background-color: rgb(2, 2, 251);
     color: white;
     padding: 15px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .logo_site img {
     width: 100px;
@@ -35,59 +38,158 @@ header {
     justify-content: space-between;
     text-decoration: none;
     margin-left: 50px;
+    margin-top: 25px;
     color: white;
 }
 .nav_bar nav a:hover {
     color: black;
     cursor: pointer;
     transition: 0.9s;
-}/* Footer */
+}
+.header {
+    background-color: rgb(32, 32, 150);
+    margin-bottom: 20px;
+    padding: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 0px 0px 5px 5px;
+}
+.header ul {
+    display: flex;
+    margin-left: 150px;
+}
+.header li {
+    margin-left: 80px;
+    display: flex;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.header a:hover {
+    color: white;
+    transition: 1s;
+}
 
-/* le body */
+/* Body */
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.body h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid black;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+/* PRODUITS FEMME */
 .categorie_femme {
     display: flex;
-    flex-direction: row;
-    font-size: 18px;
-    margin-bottom: 20px;
-    background: rgb(250, 253, 254);
-    padding:auto;
-    
-}
-
-.categorie_femme img{
-    width: 110px;
-
-}   
-.categorie_femme, p {
-    margin: 18px;
-    display: flex;
-    justify-content: center;
-    gap: 230px;
-}
-
-.categorie_femme{
-    margin: 18px;
-    display: flex;
-    justify-content: center;
-    gap: 230px;
-
-}
-.femme_1{display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.categorie_femme img {
+    width:200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 15px 8px 15px black;
+}
+.categorie_femme img:hover {
+    border-radius: 12px;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+    border: solid 5px black;
+    box-shadow: none;
+}
+.categorie_femme p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.categorie_femme h4 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.categorie_femme button {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.categorie_femme button:hover {
+    background-color: blue;
+    transition: 1s;
+    transform: scale(1.2);
+    border-radius: 8px;
+    cursor: pointer;
 }
 
+/* FORMULAIRE D'AJOUT AU PANIER */
+form {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    border: 4px solid black;
+    margin-top: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 25px;
+    background-color: gainsboro;
+}
+form .panier_header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+form .panier_header h1 {
+    border-bottom: 2px solid black;
+}
+form .panier_header p {
+    margin-right: 20px;
+    padding: 5px;
+    border: 2px solid black;
+}
+form .panier_header p:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: brown;
+}
+form .panier_corps {
+    display: flex;
+    justify-content: space-around;
+}
+form button {
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 15px;
+    padding: 3px;
+    border-radius: 5px;
+}
+form button:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgb(32, 32, 150);
+    border-radius: 10px;
+}
 
+/* Footer */
 footer {
     background-color: blue;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    position:absolute;
-    top: 8000px;
-    width:100%; 
-    height: 150px;
-
+}
+footer li {
+    margin: 15px;
 }

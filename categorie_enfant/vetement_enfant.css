@@ -1,0 +1,204 @@
+* Par convention */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+/* Le header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(2, 2, 251);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo_site img {
+    width: 100px;
+    height: 80px;
+}
+.nav_bar nav ul,
+.nav_bar nav li {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar nav a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 25px;
+    color: white;
+}
+.nav_bar nav a:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.header {
+    background-color: rgb(32, 32, 150);
+    margin-bottom: 20px;
+    padding: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 0px 0px 5px 5px;
+}
+.header ul {
+    display: flex;
+    margin-left: 150px;
+}
+.header li {
+    margin-left: 80px;
+    display: flex;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.header a:hover {
+    color: white;
+    transition: 1s;
+}
+
+/* Body */
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.body h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid black;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.categorie_enfant {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: space-between;
+  gap: 10px;               
+  padding: 10px;
+}
+
+.categorie_enfant_1 {
+  width: 30%;              
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.categorie_enfant_1 img {
+  width: 40%;              
+  border-radius: 10px;
+  margin-bottom: 10;      
+  border-radius: 8px; 
+  box-shadow: 15px 8px 15px black;     
+}
+.categorie_enfant img:hover{
+     border-radius: 12px;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+    border: solid 5px black;
+    box-shadow: none;
+}
+.categorie_enfant_1 button{
+     padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.categorie_enfant_1 button:hover {
+    background-color: blue;
+    transition: 1s;
+    transform: scale(1.2);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.enfant_1{display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.enfant_1 img:hover{
+     border-radius: 12px;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+    border: solid 5px black;
+    box-shadow: none;
+}
+
+}
+/* FORMULAIRE D'AJOUT AU PANIER */
+form {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    border: 4px solid black;
+    margin-top: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 25px;
+    background-color: gainsboro;
+}
+form .panier_header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+form .panier_header h1 {
+    border-bottom: 2px solid black;
+}
+form .panier_header p {
+    margin-right: 20px;
+    padding: 5px;
+    border: 2px solid black;
+}
+form .panier_header p:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: brown;
+}
+form .panier_corps {
+    display: flex;
+    justify-content: space-around;
+}
+form button {
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 15px;
+    padding: 3px;
+    border-radius: 5px;
+}
+form button:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgb(32, 32, 150);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+footer li {
+    margin: 15px;
+}
