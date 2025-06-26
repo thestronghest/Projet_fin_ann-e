@@ -1,4 +1,4 @@
-* Par convention */
+/* Par convention */
 * {
     padding: 0;
     margin: 0;
@@ -11,18 +11,19 @@ body, html {
 }
 
 /* Le header */
+
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(2, 2, 251);
+    background-color: blue;
     color: white;
     padding: 15px;
     font-size: 18px;
     margin-bottom: 0px;
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
+    z-index: 999; /* Place l'élément au-dessus des autres */
+    position: sticky; /* Rend l'élément fixe en haut de la page lors du défilement */
+    top: 0; /* Positionne l'élément en haut */
+    left: 0; /* Positionne l'élément à gauche */
 }
 .logo_site img {
     width: 100px;
@@ -73,6 +74,7 @@ header {
 }
 
 /* Body */
+
 .body {
     display: flex;
     flex-direction: column;
@@ -86,63 +88,49 @@ header {
     margin-left: 500px;
     margin-right: 500px;
 }
+
+/* Corps */
 .categorie_enfant {
-  display: flex;
-  flex-wrap: wrap;       
-  justify-content: space-between;
-  gap: 10px;               
-  padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
 }
-
 .categorie_enfant_1 {
-  width: 30%;              
-  box-sizing: border-box;
-  text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
 }
-
 .categorie_enfant_1 img {
-  width: 40%;              
-  border-radius: 10px;
-  margin-bottom: 10;      
-  border-radius: 8px; 
-  box-shadow: 15px 8px 15px black;     
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 15px 8px 15px black;
 }
-.categorie_enfant img:hover{
-     border-radius: 12px;
+.categorie_enfant_1 img:hover {
+    border-radius: 12px;
     transform: scale(1.1);
     transition: 1s;
     cursor: pointer;
     border: solid 5px black;
     box-shadow: none;
 }
-.categorie_enfant_1 button{
-     padding: 5px;
+.categorie_enfant_1 button {
+    padding: 5px;
     font-size: 15px;
     font-weight: 700;
     border-radius: 3px;
 }
 .categorie_enfant_1 button:hover {
-    background-color: blue;
+    background-color: rgb(2, 19, 251);
     transition: 1s;
     transform: scale(1.2);
     border-radius: 8px;
     cursor: pointer;
 }
-.enfant_1{display: flex;
-    justify-content: center;
-    gap: 100px;
-}
-.enfant_1 img:hover{
-     border-radius: 12px;
-    transform: scale(1.1);
-    transition: 1s;
-    cursor: pointer;
-    border: solid 5px black;
-    box-shadow: none;
-}
-
-}
 /* FORMULAIRE D'AJOUT AU PANIER */
+
 form {
     display: none;
     flex-direction: column;
@@ -192,6 +180,7 @@ form button:hover {
 }
 
 /* Footer */
+
 footer {
     background-color: blue;
     color: white;

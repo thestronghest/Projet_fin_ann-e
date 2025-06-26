@@ -27,7 +27,7 @@ function afficherProduit(paniers) {
             <button id="retirer" class="far fa-times-circle" style="color: red; margin-left: 70px; margin-top: 60px; border: none; padding: 10px; cursor: pointer;">X</button>
             <td><img src="${produit.img}"></td>
             <td>${produit.nom}</td>
-            <td>$${produit.prix}</td>
+            <td>$${produit.prix}</td>z
             <td><input type="number" value="${produit.quantity}"></td>
             <td>
                 <select name="taille" id="taille">

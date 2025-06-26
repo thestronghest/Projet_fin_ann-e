@@ -5,24 +5,23 @@
     box-sizing: border-box;
 }
 body, html {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
-/* Le header */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(2, 2, 251);
+    background-color: rgb(31, 2, 251);
     color: white;
     padding: 15px;
     font-size: 18px;
-    margin-bottom: 0px;
-    z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 .logo_site img {
     width: 100px;
@@ -46,13 +45,15 @@ header {
     cursor: pointer;
     transition: 0.9s;
 }
+
+/* Header secondaire (si besoin) */
 .header {
-    background-color: rgb(32, 32, 150);
+    background-color: rgb(150, 32, 100);
     margin-bottom: 20px;
     padding: 15px;
     margin-left: 250px;
     margin-right: 250px;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 .header ul {
     display: flex;
@@ -72,36 +73,26 @@ header {
     transition: 1s;
 }
 
-/* Body */
-.body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.body h1 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 5px solid black;
-    margin-left: 500px;
-    margin-right: 500px;
-}
-
-/* PRODUITS FEMME */
+/* Corps */
 .categorie_femme {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 10px;
 }
-.categorie_femme img {
-    width:200px;
-    border-radius: 8px;
+.categorie_femme_1 {
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.categorie_femme_1 img {
+    width: 40%;
+    border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 15px 8px 15px black;
 }
-.categorie_femme img:hover {
+.categorie_femme_1 img:hover {
     border-radius: 12px;
     transform: scale(1.1);
     transition: 1s;
@@ -109,24 +100,14 @@ header {
     border: solid 5px black;
     box-shadow: none;
 }
-.categorie_femme p {
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 5px;
-}
-.categorie_femme h4 {
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 5px;
-}
-.categorie_femme button {
+.categorie_femme_1 button {
     padding: 5px;
     font-size: 15px;
     font-weight: 700;
     border-radius: 3px;
 }
-.categorie_femme button:hover {
-    background-color: blue;
+.categorie_femme_1 button:hover {
+    background-color: rgb(31, 2, 251);
     transition: 1s;
     transform: scale(1.2);
     border-radius: 8px;
@@ -178,13 +159,13 @@ form button {
 form button:hover {
     cursor: pointer;
     transition: 1s;
-    background-color: rgb(32, 32, 150);
+    background-color: rgb(150, 32, 100);
     border-radius: 10px;
 }
 
 /* Footer */
 footer {
-    background-color: blue;
+    background-color: rgb(39, 2, 251);
     color: white;
     display: flex;
     justify-content: space-between;
