@@ -2,7 +2,7 @@
 // Sélectionne tous les éléments avec la classe 'produit' 
 var button = document.querySelectorAll('#ajout_panier');
 
-console.log(button[1].dataset);
+console.log(button[1].dataset); 
 
 //console.log(button); // Décommentez cette ligne si vous souhaitez afficher les boutons dans la console
 

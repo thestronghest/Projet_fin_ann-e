@@ -7,9 +7,6 @@ function afficherProduit(paniers) {
     // Sélectionne l'élément HTML avec l'ID 'cartContainer' où les produits seront affichés
     const paniertab = document.getElementById('cartContainer');
 
-    // Affiche le contenu du panier dans la console pour le debug
-    console.log(paniers);
-
     // Vide le contenu HTML de l'élément 'cartContainer'
     paniertab.innerHTML = '';
 
@@ -27,7 +24,7 @@ function afficherProduit(paniers) {
             <button id="retirer" class="far fa-times-circle" style="color: red; margin-left: 70px; margin-top: 60px; border: none; padding: 10px; cursor: pointer;">X</button>
             <td><img src="${produit.img}"></td>
             <td>${produit.nom}</td>
-            <td>$${produit.prix}</td>z
+            <td>$${produit.prix}</td>
             <td><input type="number" value="${produit.quantity}"></td>
             <td>
                 <select name="taille" id="taille">
@@ -51,7 +48,7 @@ function afficherProduit(paniers) {
             retirer(produit.nom); // Appelle la fonction 'retirer' avec l'image du produit comme argument
         }
         // Ajoute le prix du produit au total
-        tolal1 += parseInt(produit.prix);
+        tolal1 +=(parseInt(produit.prix)*parseInt(produit.quantity));
         // Sélectionne tous les éléments avec la classe 'Total'
         const tota = document.querySelectorAll('.Total');
         // Met à jour le contenu HTML de chaque élément 'Total' avec le nouveau total
@@ -129,7 +126,6 @@ document.querySelectorAll('#payement').forEach(button => {
         event.preventDefault();
         // Affiche l'élément avec l'ID 'modalOverlay' en modifiant son style display
         document.getElementById('modalOverlay').style.display = 'block';
-        console.log(document.getElementById('modalOverlay'))
         // Affiche l'élément avec l'ID 'Formulaire_achat' en modifiant son style display
         document.getElementById('Formulaire_achat').style.display = 'block';
         // Ajoute la classe 'modal-open' à l'élément body pour désactiver le défilement
@@ -241,7 +237,6 @@ function regexp(event) {
         alert('Votre commande a bien été effectuée.');
         alert(Anomvaleur + " " + Bnumvaleur + " " + Cmailvaleur + " " + Dadressevaleur);
         alert("Vous pouvez fermer le formulaire pour commander à nouveau !");
-        console.log(Anomvaleur + Bnumvaleur + Cmailvaleur + Dadressevaleur);
         // Si un ou plusieurs champs ne sont pas valides
     } else {
         alert('Veuillez corriger les erreurs dans le formulaire.');
@@ -252,5 +247,5 @@ function regexp(event) {
 var btnEnresgistrer = document.getElementById("btnEnresgistrer");
 // Ajoute un écouteur d'événement pour le clic sur le bouton 'btnEnresgistrer' qui appelle la fonction regexp
 if (btnEnresgistrer.addEventListener) {
-    btnEnresgistrer.addEventListener("click", regexp);
+    btnEnresgistrer.addEventListener("click", regexp); 
 }

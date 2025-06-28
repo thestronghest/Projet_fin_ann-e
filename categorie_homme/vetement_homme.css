@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} 
 body, html {
     padding: 0px;
     margin: 0px;
@@ -284,55 +284,6 @@ header {
     cursor: pointer;
 } 
 
-/* FORMULAIRE D'AJOUT AU PANIER */
-
-form {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    border: 4px solid black;
-    margin-top: 25px;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 25px;
-    background-color: gainsboro;
-}
-form .panier_header {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-form .panier_header h1 {
-    border-bottom: 2px solid black;
-}
-form .panier_header p {
-    margin-right: 20px;
-    padding: 5px;
-    border: 2px solid black;
-}
-form .panier_header p:hover {
-    cursor: pointer;
-    transition: 1s;
-    background-color: brown;
-}
-form .panier_corps {
-    display: flex;
-    justify-content: space-around;
-}
-form button {
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 15px;
-    padding: 3px;
-    border-radius: 5px;
-}
-form button:hover {
-    cursor: pointer;
-    transition: 1s;
-    background-color: rgb(32, 32, 150);
-    border-radius: 10px;
-}
 
 /* Footer */
 

@@ -5,23 +5,25 @@
     box-sizing: border-box;
 }
 body, html {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     scroll-behavior: smooth;
 }
 
-/* Header */
+/* Le header */
+
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(31, 2, 251);
+    background-color: blue;
     color: white;
     padding: 15px;
     font-size: 18px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
+    margin-bottom: 0px;
+    z-index: 999; /* Place l'élément au-dessus des autres */
+    position: sticky; /* Rend l'élément fixe en haut de la page lors du défilement */
+    top: 0; /* Positionne l'élément en haut */
+    left: 0; /* Positionne l'élément à gauche */
 }
 .logo_site img {
     width: 100px;
@@ -46,53 +48,54 @@ header {
     transition: 0.9s;
 }
 
-/* Header secondaire (si besoin) */
-.header {
-    background-color: rgb(150, 32, 100);
-    margin-bottom: 20px;
-    padding: 15px;
-    margin-left: 250px;
-    margin-right: 250px;
-    border-radius: 0 0 5px 5px;
-}
-.header ul {
+/* Body */
+
+.body {
     display: flex;
-    margin-left: 150px;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
 }
-.header li {
-    margin-left: 80px;
-    display: flex;
-}
-.header a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-.header a:hover {
-    color: white;
-    transition: 1s;
+.body h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid black;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
-/* Corps */
-.categorie_femme {
+/* CHEMISES */
+
+.body_image_homme_ligne_1,
+.body_image_homme_ligne_2,
+.body_image_homme_ligne_3,
+.body_image_homme_ligne_4,
+.body_image_homme_ligne_5{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
-    padding: 10px;
-}
-.categorie_femme_1 {
-    width: 30%;
-    box-sizing: border-box;
     text-align: center;
 }
-.categorie_femme_1 img {
-    width: 40%;
-    border-radius: 10px;
+.body_image_homme_ligne_5 {
+    margin-bottom: 10px;
+}
+
+.body_image_homme_ligne_1 img,
+.body_image_homme_ligne_2 img,
+.body_image_homme_ligne_3 img,
+.body_image_homme_ligne_4 img,
+.body_image_homme_ligne_5 img {
+    width: 250px;
+    border-radius: 8px;
     margin-bottom: 10px;
     box-shadow: 15px 8px 15px black;
 }
-.categorie_femme_1 img:hover {
+.body_image_homme_ligne_1 img:hover,
+.body_image_homme_ligne_2 img:hover,
+.body_image_homme_ligne_3 img:hover,
+.body_image_homme_ligne_4 img:hover,
+.body_image_homme_ligne_5 img:hover {
     border-radius: 12px;
     transform: scale(1.1);
     transition: 1s;
@@ -100,72 +103,50 @@ header {
     border: solid 5px black;
     box-shadow: none;
 }
-.categorie_femme_1 button {
+.body_image_homme_ligne_1 p,
+.body_image_homme_ligne_2 p,
+.body_image_homme_ligne_3 p,
+.body_image_homme_ligne_4 p,
+.body_image_homme_ligne_5 p{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.body_image_homme_ligne_1 h4,
+.body_image_homme_ligne_2 h4,
+.body_image_homme_ligne_3 h4,
+.body_image_homme_ligne_4 h4,
+.body_image_homme_ligne_5 h4{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.body_image_homme_ligne_1 button,
+.body_image_homme_ligne_2 button,
+.body_image_homme_ligne_3 button,
+.body_image_homme_ligne_4 button,
+.body_image_homme_ligne_5 button{
     padding: 5px;
     font-size: 15px;
     font-weight: 700;
     border-radius: 3px;
 }
-.categorie_femme_1 button:hover {
-    background-color: rgb(31, 2, 251);
+.body_image_homme_ligne_1 button:hover,
+.body_image_homme_ligne_2 button:hover,
+.body_image_homme_ligne_3 button:hover,
+.body_image_homme_ligne_4 button:hover,
+.body_image_homme_ligne_5 button:hover{
+    background-color: blue;
     transition: 1s;
     transform: scale(1.2);
     border-radius: 8px;
     cursor: pointer;
 }
 
-/* FORMULAIRE D'AJOUT AU PANIER */
-form {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    border: 4px solid black;
-    margin-top: 25px;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 25px;
-    background-color: gainsboro;
-}
-form .panier_header {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-form .panier_header h1 {
-    border-bottom: 2px solid black;
-}
-form .panier_header p {
-    margin-right: 20px;
-    padding: 5px;
-    border: 2px solid black;
-}
-form .panier_header p:hover {
-    cursor: pointer;
-    transition: 1s;
-    background-color: brown;
-}
-form .panier_corps {
-    display: flex;
-    justify-content: space-around;
-}
-form button {
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 15px;
-    padding: 3px;
-    border-radius: 5px;
-}
-form button:hover {
-    cursor: pointer;
-    transition: 1s;
-    background-color: rgb(150, 32, 100);
-    border-radius: 10px;
-}
-
 /* Footer */
+
 footer {
-    background-color: rgb(39, 2, 251);
+    background-color: blue;
     color: white;
     display: flex;
     justify-content: space-between;

@@ -1,20 +1,23 @@
 // Simulation de la base de donnée
-// Sélectionne tous les éléments avec l'id 'ajout_panier' 
+// Sélectionne tous les éléments avec la classe 'produit' 
 var button = document.querySelectorAll('#ajout_panier');
 
+console.log(button[1].dataset); 
 
+//console.log(button); // Décommentez cette ligne si vous souhaitez afficher les boutons dans la console
 
 // Parcourt tous les boutons sélectionnés
 for (let i = 0; i < button.length; i++) {
 
     //console.log(button[i]); // Décommentez cette ligne si vous souhaitez afficher chaque bouton dans la console
 
-    // Ajoute un écouteur d'événement pour le clic sur chaque bouton 
+    // Ajoute un écouteur d'événement pour le clic sur chaque bouton
     button[i].onclick = () => {
         // Récupère le nom et le prix du produit à partir des attributs data-name et data-price du bouton
         const name = button[i].dataset.name;
         const price = button[i].dataset.price;
         const image_principale = button[i].parentElement.firstElementChild.src;
+        console.log(image_principale)
         ajouterPanier(image_principale, name, price, 1)
     };
 }
@@ -37,6 +40,8 @@ function ajouterPanier(img, nom, prix, quantity) {
         } else if (paniers.length >= 1) {
             // Si le panier contient déjà des produits
             let produitTrouve = paniers.find(produit => produit.nom == nom) // Cherche si le produit est déjà dans le panier
+
+            console.log(produitTrouve);
 
             let produitAJour = {
                 img: img,
