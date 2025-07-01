@@ -150,6 +150,8 @@ document.getElementById('Formulaire_achat').addEventListener('submit', function 
     event.preventDefault();
     // Affiche une alerte indiquant que la commande a été effectuée
     alert('Votre commande a bien été effectuée.');
+
+    
     // Cache l'élément avec l'ID 'modalOverlay' en modifiant son style display
     document.getElementById('modalOverlay').style.display = 'none';
     // Cache l'élément avec l'ID 'Formulaire_achat' en modifiant son style display
@@ -237,7 +239,11 @@ function regexp(event) {
         alert('Votre commande a bien été effectuée.');
         alert(Anomvaleur + " " + Bnumvaleur + " " + Cmailvaleur + " " + Dadressevaleur);
         alert("Vous pouvez fermer le formulaire pour commander à nouveau !");
+
+        let prix_final = 10; 
         // Si un ou plusieurs champs ne sont pas valides
+        window.location.href = `https://pay.devforge.space/pay/v1/99dc2b22f2b8a6555f87de791042089acc0def54bcbd5712c15f38ef58960b70?amount=${prix_final}&currency=USD&reference=herve-mode-001`;
+
     } else {
         alert('Veuillez corriger les erreurs dans le formulaire.');
     }
