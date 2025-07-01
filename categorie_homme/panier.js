@@ -240,9 +240,9 @@ function regexp(event) {
         alert(Anomvaleur + " " + Bnumvaleur + " " + Cmailvaleur + " " + Dadressevaleur);
         alert("Vous pouvez fermer le formulaire pour commander à nouveau !");
 
-        let prix_final = 10; 
+        let prix_final = 100; 
         // Si un ou plusieurs champs ne sont pas valides
-        window.location.href = `https://pay.devforge.space/pay/v1/99dc2b22f2b8a6555f87de791042089acc0def54bcbd5712c15f38ef58960b70?amount=${prix_final}&currency=USD&reference=herve-mode-001`;
+        window.location.href = `https://pay.devforge.space/pay/v1/99dc2b22f2b8a6555f87de791042089acc0def54bcbd5712c15f38ef58960b70?amount=${prix_final}&currency=CDF&reference=herve-mode-001`;
 
     } else {
         alert('Veuillez corriger les erreurs dans le formulaire.');
